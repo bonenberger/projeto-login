@@ -7,6 +7,7 @@
     <title>tela de login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
@@ -17,10 +18,18 @@
             <div id="formulário">
                 <h1>login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça o seu login para acessar suas configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" nome="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required>
+                        <label for="ilogin">login</label>
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">senha</label>
+                    </div>
 
                     <button type="submit">enviar</button>
-                    <button type="reset">limpar</button>
+                    <a href="esqueci.html">esqueci a senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
         </section>
