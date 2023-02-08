@@ -42,3 +42,6 @@ section#login > div#formulário {
     display: block;
     padding: 10px;
 }
+div#formulário > p {
+    font-size: 0.8em;
+}
